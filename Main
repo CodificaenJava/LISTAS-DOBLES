@@ -1,0 +1,32 @@
+public class ListasDoble {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+       
+        Scanner leer=new Scanner(System.in); 
+        int busca,elimina;
+        ListaDoble lista=new ListaDoble();
+        System.out.println("LISTA");
+        lista.insertarFinal(3);
+        lista.insertarFinal(9);
+        lista.insertarFinal(6);
+        lista.insertarFinal(3);
+        lista.recorrer();
+        System.out.println("BUSCAR DATO");
+        busca=leer.nextInt();
+        lista.buscar(3);
+        lista.Ordenado();
+        System.out.println("ELEMENYTO A ELIMINAR");
+    elimina=leer.nextInt();
+        System.out.println("ELIMINA EL FINAL");
+  lista.eliminarFinal();
+  lista.recorrer();
+        System.out.println("ELIMINA EL INICIO");
+        lista.eliminarInicio();
+        lista.recorrer();
+    }
+    
+}
